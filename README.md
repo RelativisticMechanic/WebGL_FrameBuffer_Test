@@ -10,7 +10,6 @@ var gl = canvas.getContext('webgl');
 myPixArray = new PixArray(gl, 256);
 
 var frameCallback = () => {
-    setCanvasDimensions(gl, canvas, window.innerWidth * 0.50, window.innerHeight * 0.75);
     for(var i = 0; i < 256; i++)
     {
         for(var j = 0; j < 256; j++)
