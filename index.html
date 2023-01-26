@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>WebGL Framebuffer Test</title>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+        <link rel="stylesheet" href="./index.css">
+        <script>
+            function setAppTitle()
+            {
+                document.getElementById("app_title").innerHTML = "<h1>" + document.title + "</h1>";
+            }
+            function setCopyrightDate()
+            {
+                var d = new Date();
+                document.getElementById("cpyright_date").innerHTML = d.getFullYear() + " "
+            }
+        </script>
+    </head>
+    <body onload="setAppTitle(); setCopyrightDate();">
+        <div class="game">
+            <p id="app_title"></p>
+            <canvas id="game-surface">
+                Your browser does not support HTML5.
+            </canvas>
+            <center>
+            &copy; <em id="cpyright_date"></em> Siddharth Gautam, RelativisticMechanic @
+                <a href="https://github.com/RelativisticMechanic">github.com</a></i>
+            </center>
+            <script src="./shader.js"></script>
+            <script src="./pixarray.js"></script>
+            <script src="./app.js"></script>
+        </div>
+    </body>
+</html>
